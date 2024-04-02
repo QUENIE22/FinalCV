@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+body{
+	background: #c4c4c4;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.CurriculumVitae_container{
+	display: flex;
+	width: 1000px;
+	margin: 55px auto;
+	background: #fff;
+	padding: 11px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left{
+	width: 40%;
+	background:#A3C1AD ;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .resume_image{
+	width: 100%;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_image img{
+	width: 100%;
+	display: block;
+	border-radius:50%;
+	border:10px solid white;
+}
+
+.CurriculumVitae_container .CurriculumVitae_title{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_info{
+	color: black;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_bottom{
+	padding: 20px 30px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_item{
+	padding: 20px 0;
+	border-bottom: 1px solid #008E97;
+}
+
+.CurriculumVitae_container .CurriculumVitae_item:last-child{
+	border-bottom: 0;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_namerole{
+	display: none;
+}
+
+.CurriculumVitae_container .CurriculumVitae_namerole .name{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_namerole .role{
+	color: #84838b;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_contact .CurriculumVitae_info:last-child{
+	 margin-top: 11px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_contact .CurriculumVitae_subtitle{
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_skills .skills_list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_skills .skills_list .skills_bar p{
+	position: relative;
+	width: 124px;
+    height: 20px;
+    background: #fff;
+}
+
+.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_skills .skills_list .skills_bar p span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #5F9EA0;
+	width: 100%;
+	height: 100%;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right{
+	width: 60%;
+	padding: 20px 40px;
+	color: black;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_namerole .name{
+	color: white;
+	font-size: 32px;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_namerole .role{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_item .CurriculumVitae_title{
+	color: #5F9EA0;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data{
+	display: flex;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data:last-child .year:after{
+	display: none;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .resmue_interests .CurriculumVitae_info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.CurriculumVitae_container .CurriculumVitae_right .resmue_interests {
+	font-size: 40px;
+	color: #01752;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_namerole{
+		display: none;
+	}
+	.CurriculumVitae_container .CurriculumVitae_left .CurriculumVitae_namerole{
+		display: block;
+	}
+	.CurriculumVitae_container{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.CurriculumVitae_container .CurriculumVitae_left,
+	.CurriculumVitae_container .CurriculumVitae_right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 424px){
+	.CurriculumVitae_container .CurriculumVitae_right{
+		padding: 20px 30px;
+	}
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data{
+		flex-direction: column;
+	}
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #5F9EA0;
+	}
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .year:before,
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .year:after{
+		display: none;
+	}
+	.CurriculumVitae_container .CurriculumVitae_right .CurriculumVitae_data .content{
+		width: 100%;
+		padding: 0;
+	}
+	.CurriculumVitae_container .CurriculumVitae_right .resmue_interests{
+		font-size: 20px;
+	}
